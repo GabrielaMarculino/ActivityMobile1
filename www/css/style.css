@@ -1,0 +1,161 @@
+/**/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+ background:#ccccff;
+ font-family: 'Lobster', cursive;
+}
+
+
+.painel button{
+  width: 100%;
+  height: 50px;
+  font-size: 35px;
+  margin-top: 20px;
+  font-family: 'Lobster', cursive;
+  
+
+}
+
+
+
+#resultado{
+    width: 87%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 15px;
+    text-align: right;
+}
+
+#btn7{
+    margin-top: 50px;
+    margin-left: 25%;
+    font-size: 15px;
+    background-color:  #99ccff;
+    
+    
+}
+
+#btn8{
+    margin-top: 50px;
+    margin-left:0px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btn9{
+    margin-top: 50px;
+    margin-left: -15px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btnMais{
+    margin-top: 50px;
+    margin-left: -25px;
+    font-size: 15px;
+    background-color: #df99ff;
+}
+
+#btn4{
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+    
+}
+
+#btn5{
+    margin-top: 15%;
+    margin-left: 0px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btn6{
+    margin-top: 15%;
+    margin-left: -15px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btnMenos{
+    margin-top: 15%;
+    margin-left: -25px;
+    font-size: 15px;
+    background-color: #df99ff;
+}
+
+#btn1{
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+    
+}
+
+#btn2{
+    margin-top: 15%;
+    margin-left: 0px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btn3{
+    margin-top: 15%;
+    margin-left: -15px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btnMultipicar{
+    margin-top: 15%;
+    margin-left: -25px;
+    font-size: 15px;
+    background-color: #df99ff;
+}
+#btnPonto{
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 15px;
+    background-color: #df99ff;
+    
+    
+}
+
+#btn0{
+    margin-top: 15%;
+    margin-left: 0px;
+    font-size: 15px;
+    background-color: #99ccff;
+    
+}
+
+#btnIgual{
+    margin-top: 15%;
+    margin-left: -15px;
+    font-size: 15px;
+    background-color: #df99ff;
+    
+}
+
+#btnDividir{
+    margin-top: 15%;
+    margin-left: -25px;
+    font-size: 15px;
+    background-color: #df99ff;
+}
+#btnClear{
+  width: 320px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 8px;
+  text-align: center;
+}
