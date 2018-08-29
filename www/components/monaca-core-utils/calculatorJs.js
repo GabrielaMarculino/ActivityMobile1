@@ -1,11 +1,10 @@
 var value = "";
 var value2 = "";
 var operation = "";
-var res;
 var clear ="";
 var total = 0;
 
-
+//Configurando os botões  (números)
 $(document).on("click","#btn1",function(){
   value += "1";
   $("#resultado").val(value);
@@ -46,62 +45,70 @@ $(document).on("click","#btn0",function(){
   value += "0";
   $("#resultado").val(value);
 });
+
+//Configurando os botões de operação
 $(document).on("click","#btnClear",function(){
    clear = "";
   $("#resultado").val(clear);
 });
 $(document).on("click","#btnPonto",function(){
-   value +=  '.';
+   value =  '.';
   $("#resultado").val(value);
 });
 $(document).on("click","#btnMais",function(){
   operation = "+";
-  res += value;
+  res = value;
   value = "";
-  //clear = ""; 
   $("#resultado").val(value);
 });
 $(document).on("click","#btnMenos",function(){
   operation = "-";
-  res += value;
+  res = value;
   value = "";
-  //clear = ""; 
   $("#resultado").val(value);
 });
-$(document).on("click","#btnMultiplicar",function(){
+$(document).on("click","#btnMultipicar",function(){
   operation = "*";
-  res += value;
+  res = value;
   value = "";
-  //clear = ""; 
   $("#resultado").val(value);
 });
 $(document).on("click","#btnDividir",function(){
   operation = "/";
-  res += value;
-  value = "";
-  //clear = ""; 
+  res = value;
+  value = ""; 
   $("#resultado").val(value);
 });
+
+//Fazendo as operações
 $(document).on("click","#btnIgual",function(){
 if(operation == "+")
 {
   value2 = $("#resultado").val();
-  total = parseFloat(value) + parseFloat(value2);
+  total = parseFloat(res) + parseFloat(value2);
   $("#resultado").val(total);
 } 
 else if(operation == "-"){
   value2 = $("#resultado").val();
-  total = parseFloat(value) - parseFloat(value2);
+  total = parseFloat(res) - parseFloat(value2);
   $("#resultado").val(total);
 }
 else if(operation == "*"){
   value2 = $("#resultado").val();
-  total = parseFloat(value) * parseFloat(value2);
+  total = parseFloat(res) * parseFloat(value2);
   $("#resultado").val(total);
 }
 else if(operation == "/"){
   value2 = $("#resultado").val();
-  total = parseFloat(value) / parseFloat(value2);
+  total = parseFloat(res) / parseFloat(value2);
   $("#resultado").val(total);
 }
+
+//Zerando as variáveis para que o btnClear funcione automaticamente
+total = 0;
+value2 = "";
+value = "";
+res = "";
+
+
 });
